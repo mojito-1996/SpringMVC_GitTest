@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloController {
     @RequestMapping("/getmessage")
     public String getMessage(ModelMap modelMap){
-        modelMap.addAttribute("message","这就是您求情的信息");
+        modelMap.addAttribute("message","这就是您请求的信息");
         System.out.println("获得请求:");
         System.out.println(modelMap.getAttribute("message"));
         return "success";
